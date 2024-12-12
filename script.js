@@ -46,8 +46,11 @@ fetch(url)
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = `
                 <p>IP Address: ${data.ip}</p>
+                <div class = "vertical-line"></div>
                 <p>Location: ${data.location.city}, ${data.location.region}, ${data.location.country}</p>
+                <div class = "vertical-line"></div>
                 <p>Timezone: ${data.location.timezone}</p>
+                <div class = "vertical-line"></div>
                 <p>ISP: ${data.isp}</p>
             `;
             const lat = data.location.lat;
